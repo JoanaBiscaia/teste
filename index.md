@@ -1,37 +1,178 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
 
-You can use the [editor on GitHub](https://github.com/JoanaBiscaia/teste/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+      integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB"
+      crossorigin="anonymous"
+    />
 
-### Markdown
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js"
+      integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p"
+      crossorigin="anonymous"
+    ></script>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js"
+      integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
 
-```markdown
-Syntax highlighted code block
+    <script
+      defer="defer"
+      src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+      integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"
+      crossorigin="anonymous"
+      onload='renderMathInElement(document.body,
+        {delimiters:[ {left: "$$", right: "$$" , display: true}, 
+                      {left: "$" , right: "$" , display: false}, 
+                      {left: "\\(" , right: "\\)" , display: false}, 
+                      {left: "\\[" , right: "\\]" , display: true} 
+                      ]
+        });'
+    ></script>
 
-# Header 1
-## Header 2
-### Header 3
+</head>
+<body>
 
-- Bulleted
-- List
+<h1>Ficha de Avaliação </h2>
+<span style="font-size: 16px;">
+<ol>
+  <li>Considere, num referencial o.n. $Oxyz$, um paralelepípedo retângulo $ [BCDEFGH]$ de bases $[ABCD]$
+e $[FGHE]$ , sendo  $[AF]$ , $[BG]$ , $[CH]$ e $[DE]$ as arestas laterais deste paralelepípedo.
+ </br>    </br>   
+Na base $[ABCD]$ , o vértice $A$ pertence ao semieixo positivo $Ox$, o vértice $B$ pertence ao semieixo
+positivo $Oy$, os vértices $C$ e $D$ têm cota positiva, e o segmento de reta $[BD]$ é uma diagonal. </br>    </br>   
+Sabe-se ainda que:</li>
+  
+<p style="margin-left: 40px;">$E (7, 2,15)$ e $G(6,10,13)$
+</p>   
+<p style="margin-left: 40px;">a reta $EF$ é definida pela equação $(x,y,z)=(1,-2,19)+k(-3,-2,2), k \in \R$
+</p>
+Qual da equaçoes seguintes define uma reta perpendicular à reta $EF$ e que passa no ponto $E$?
 
-1. Numbered
-2. List
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $(x,y,z)=(7,-3,3)+k(2,-3,0), k \in \R$
+  </br> <strong>(B)</strong> $(x,y,z)=(7,2,15)+k(0,3,-3), k \in \R$
+  </br> <strong>(C)</strong> $(x,y,z)=(7,-10,3)+k(0,3,3), k \in \R$
+  </br> <strong>(D)</strong> $(x,y,z)=(7,2,15)+k(2,0,-3), k \in \R$
+</p>   
+  <li>Numa escola frequentada por estudantes portugueses e estrangeiros, $60\%$ dos alunos são raparigas e
+$15\%$ são rapazes estrangeiros.
+Escolheu-se, ao acaso, um aluno dessa escola e verificou-se que era um rapaz.
+Qual é a probabilidade de ele ser português?</li>
 
-**Bold** and _Italic_ and `Code` text
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $45\%$ 
+  </br> <strong>(B)</strong> $50\%$
+  </br> <strong>(C)</strong> $57,5\%$
+  </br> <strong>(D)</strong> $62,5\%$
+</p>   
 
-[Link](url) and ![Image](src)
-```
+<li>Seja $(v_n)$ uma progressão geométrica.
+Sabe-se que $v_5=4$ e que $v_8=108$
+Qual é o valor de $v_6$?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $12$ 
+  </br> <strong>(B)</strong> $24$
+  </br> <strong>(C)</strong> $48$
+  </br> <strong>(D)</strong> $60$
+</p>   
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+<li>Em $\C$, conjunto dos números complexos, considere $z_1=2 e^{i \frac{\pi}{4}}$ e $z_2=2 e^{i \frac{3\pi}{28}}$
+ Seja $w$ o número complexo tal que $w=\frac{z_1}{z_2}$
+  
+  Sabe-se que, no plano complexo, o afixo do número complexo $w$ é um dos vértices de um polígono
+regular com centro na origem do referencial e com outro vértice sobre o semieixo real positivo.
+Qual é o número mínimo de vértices desse polígono?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $7$ 
+  </br> <strong>(B)</strong> $14$
+  </br> <strong>(C)</strong> $21$
+  </br> <strong>(D)</strong> $28$
+</p>   
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JoanaBiscaia/teste/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+<li>Considere, num referencial o.n. $Oxyz$, um trapézio $[PQRS]$ , de bases $[PQ]$ e $[RS]$ , em que o lado $[PS]$ é perpendicular às bases.
+  Tem-se $P(1,-1,2)$, $Q(-2,1,1)$ e $R(-5,5,-3)$
+  
+  Qual das condições seguintes define a superfície esférica de centro no ponto $R$ e que passa no
+ponto $Q$?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $(x-5)^2+(y+5)^2+(z-3)^2=59$
+  </br> <strong>(B)</strong>  $(x-5)^2+(y+5)^2+(z-3)^2=41$
+  </br> <strong>(C)</strong>  $(x+5)^2+(y-5)^2+(z+3)^2=41$
+  </br> <strong>(D)</strong>  $(x+5)^2+(y-5)^2+(z+3)^2=59$
+</p>   
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+<li>Numa dada localidade, existe um clube onde se pratica badmínton e ténis. </br></br>
+  Com doze raquetes distintas, sendo seis de badmínton e seis de ténis, formam-se, ao acaso, dois
+conjuntos de seis raquetes cada um.
+   </br> 
+Qual é o valor, arredondado às centésimas, da probabilidade de cada um dos dois conjuntos ficar
+com três raquetes de badmínton e três raquetes de ténis?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $0,22$
+  </br> <strong>(B)</strong>  $0,43$
+  </br> <strong>(C)</strong>  $0,50$
+  </br> <strong>(D)</strong>  $0,89$
+</p>   
+
+<li>Seja $g$  uma função de domínio $\R \backslash \{2\}$ </br>
+  
+Sabe-se que:
+
+<p style="margin-left: 40px;">$ \lim\limits_{x \rightarrow 2^-} g(x) = 1   $
+</p>   
+  <p style="margin-left: 40px;">$ \lim\limits_{x \rightarrow 2^+} g(x) = +\infty   $
+</p>   
+Seja $(v_n)$ a sucessão de termo geral $v_n=2-\frac{5}{n+3}$
+</br>
+A qual é igual $\lim g(v_n)$?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $0$
+  </br> <strong>(B)</strong> $1$
+  </br> <strong>(C)</strong> $2$
+  </br> <strong>(D)</strong> $+\infty$
+</p>   
+
+<li>Em $\C$, conjunto dos números complexos, considere $z=2e^{i  \frac{3 \pi}{5}}$
+  
+  Seja $w$ o número complexo tal que $z \times w = i$
+  
+  Qual dos valores seguintes é um argumento do número complexo $w$ ?
+</li>
+<p style="margin-left: 40px;">
+  <strong>(A)</strong> $\frac{19\pi}{10}$ 
+  </br> <strong>(B)</strong> $\frac{2\pi}{5}$
+  </br> <strong>(C)</strong> $-\frac{2\pi}{5}$
+  </br> <strong>(D)</strong> $-\frac{19\pi}{10}$
+</p>   
+
+
+</ol></span>
+  </div>
+</div>
+
+</body>
+</html>
